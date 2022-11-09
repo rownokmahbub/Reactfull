@@ -13,20 +13,27 @@ import Home from "./pages/Home";
 import Menu from "./pages/Menu";
 import Contact from "./pages/Contact";
 import Navbar from "./component/Navbar";
-
+import { useState, createContext } from "react";
+export const AppContext =createContext()
 function App() {
-
+const [username,setUserName]= useState("rkgnreg")
   return (
+    <>
+    <AppContext.Provider value={{username,setUserName}}>
     <Router>
    <Navbar/>
       <Routes>
-        <Route path='/' element={<Home/>}/>
+        <Route path='/' element={<Home />}/>
         <Route path='/menu' element={<Menu/>}/>
         <Route path='/contact' element={<Contact/>}/>
       </Routes>
 
 
     </Router>
+    </AppContext.Provider>
+  
+    </>
+  
   );
 
 
