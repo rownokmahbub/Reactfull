@@ -13,14 +13,23 @@ import Home from "./pages/Home";
 import Menu from "./pages/Menu";
 import Contact from "./pages/Contact";
 import Navbar from "./component/Navbar";
-import { useState, createContext } from "react";
-export const AppContext =createContext()
+import Toggle from "./component/Toggle";
+import Faq from "./component/Faq";
+import UseEffect from "./component/useeffect/UseEffect";
+import DataFetch from "./component/DataFetch";
+import Country from "./component/countryapp/Country";
+import CountryFetch from "./component/countryapp/CountryFetch";
+import Dynamic from "./component/Dynamic";
+
 function App() {
-const [username,setUserName]= useState("rkgnreg")
+
   return (
-    <>
-    <AppContext.Provider value={{username,setUserName}}>
-    <Router>
+    <div className="bg-gradient-to-r from-slate-50 to-red-50">
+  <Dynamic/>
+
+
+
+    {/* <Router>
    <Navbar/>
       <Routes>
         <Route path='/' element={<Home />}/>
@@ -29,10 +38,11 @@ const [username,setUserName]= useState("rkgnreg")
       </Routes>
 
 
-    </Router>
-    </AppContext.Provider>
+    </Router> */}
+
   
-    </>
+  
+    </div>
   
   );
 

@@ -4,7 +4,7 @@ import { AppContext } from '../App'
 const User = (props) => {
   return (
     <div>
-    <h1>{props.username}</h1>
+kl;
 
    
   </div>
