@@ -20,12 +20,14 @@ import DataFetch from "./component/DataFetch";
 import Country from "./component/countryapp/Country";
 import CountryFetch from "./component/countryapp/CountryFetch";
 import Dynamic from "./component/Dynamic";
+import UserForm from "./component/UserForm";
+import UseReducer from "./component/hooks/UseReducer";
 
 function App() {
 
   return (
     <div className="bg-gradient-to-r from-slate-50 to-red-50">
-  <Dynamic/>
+<UseReducer/>
 
 
 
